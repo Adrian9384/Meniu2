@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meniu Zilei</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="meniu.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            padding-bottom: 40px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header-section {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            margin-bottom: 20px;
+            background-image: linear-gradient(to right, #343a40, #6c757d);
+        }
+        
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background-color: #495057;
+            color: white;
+            padding: 10px 12px;
+            font-weight: 500;
+        }
+        
+        .card-body {
+            padding: 0;
+            height: 600px;  /* Fixed height for Facebook embeds */
+            overflow: hidden;
+        }
+        
+        .fb-page {
+            width: 100% !important;
+            height: 600px !important;
+        }
+        
+        .fb-page iframe {
+            height: 600px !important;
+        }
+        
+        .container-fluid {
+            padding-left: 30px;
+            padding-right: 30px;
+            max-width: 100%;
+        }
+        
+        .footer {
+            background-color: #343a40;
+            color: #f8f9fa;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .row {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        
+        .col {
+            padding-left: 46px;
+            padding-right: 46px;
+            margin-bottom: 30px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .card-body {
+                height: 500px;
+            }
+            
+            .fb-page {
+                height: 500px !important;
+            }
+            
+            .fb-page iframe {
+                height: 500px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .row-cols-md-2 > * {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="5rjYW8ql"></script>
+    
+    <!-- Header Section -->
+    <div class="header-section">
+        <div class="container-fluid">
+            <h1 class="display-4 text-center fw-bold">Meniul Zilei</h1>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container-fluid">
+
+
+        <!-- Cards Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Catering La Filip</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/cateringlafilip" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/cateringlafilip" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/cateringlafilip">Catering La Filip</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Hashtag Bistro</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/hashtagbistro/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/hashtagbistro/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/hashtagbistro/">Hashtag Bistro</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Catering Ambrosia</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100086903495302" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/profile.php?id=100086903495302" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/profile.php?id=100086903495302">Catering Ambrosia</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">B52 Restaurant & Pizza</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/B52.Restaurant.Pizza" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/B52.Restaurant.Pizza" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/B52.Restaurant.Pizza">B52 Restaurant & Pizza</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Czech In La vizitiu</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/czechinlavizitiu" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/czechinlavizitiu" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/czechinlavizitiu">Czech In La vizitiu</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Spice-Up Catering</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/SpiceUpCatering" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/SpiceUpCatering" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/SpiceUpCatering">Spice-Up Catering</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Crema Restaurant</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/cremarestaurant/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/cremarestaurant/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/cremarestaurant/">Crema Restaurant</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Nova Restaurant</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/Nova-Restaurant-100084931433926/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/Nova-Restaurant-100084931433926/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/Nova-Restaurant-100084931433926/">Nova Restaurant</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Vila Restaurant Preciosa</div>
+                    <div class="card-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/VilaRestaurantPreciosa/" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/VilaRestaurantPreciosa/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/VilaRestaurantPreciosa/">Vila Restaurant Preciosa</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Catering De La Bunica</div>
+                    <div class="card-body">
+                        <iframe src="https://cateringdelabunica.ro/#meniu" width="100%" height="600" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-4">
+        <div class="container-fluid">
+            <p>© 2025 Meniul Zilei. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
